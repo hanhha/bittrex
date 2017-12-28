@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from setuptools import setup
 setup (name = 'bittrex', version = '1.0', py_modules=['bittrex'],
       description = 'A Python wrapper for Bittrex exchange API',
@@ -8,7 +10,5 @@ setup (name = 'bittrex', version = '1.0', py_modules=['bittrex'],
         'requests',
         'retrying',
         'simplejson',
-        'hmac',
-        'hashlib',
       ]
     )
