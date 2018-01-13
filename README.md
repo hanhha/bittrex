@@ -13,7 +13,7 @@ There are some APIs detected by monitoring Bittrex website's requests and respon
 - Get BTC price.
 - Get candle sticks.
 
-##Requirements:
+## Requirements:
 - Python 3+.
 
 ## Usage guide:
@@ -70,5 +70,5 @@ status4, result4   = aAPI.get_withdrawal_history ('BTC')
 status5, result5   = aAPI.get_deposit_history ('BTC')
 ~~~
 
-##License
+## License
 The code is open-source under the terms of [MIT license](https://opensource.org/licenses/MIT).
