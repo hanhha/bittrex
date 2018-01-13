@@ -59,7 +59,7 @@ status3b, result3b = mAPI.get_open_orders ('BTC-ETH')
 ~~~
 #### Account APIs:
 ~~~
-aAPI = bittrex.AccountAPI (bittrex.API_V1_1), <your API key>, <your API secret>)
+aAPI = bittrex.AccountAPI (bittrex.API_V1_1, <your API key>, <your API secret>)
 status0a, result0a = aAPI.get_balance ()
 status0b, result0b = aAPI.get_balance ('BTC')
 status1, result1   = aAPI.get_deposit_addr ('BTC')
