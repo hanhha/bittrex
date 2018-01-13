@@ -60,14 +60,15 @@ status3b, result3b = mAPI.get_open_orders ('BTC-ETH')
 #### Account APIs:
 ~~~
 aAPI = bittrex.AccountAPI (bittrex.API_V1_1), <your API key>, <your API secret>)
-get_balance ()
-get_balance ('BTC')
-get_deposit_addr ('BTC')
-withdraw ('BTC', qty = 10, addr = <my address>)
-withdraw ('BTC', qty = 10, addr = <my address>, pid = <payment id>)
-get_order (uuid = <uuid>) # <uuid> is uuid of queried order
-get_withdrawal_history ('BTC')
-get_deposit_history ('BTC')
+status0a, result0a = aAPI.get_balance ()
+status0b, result0b = aAPI.get_balance ('BTC')
+status1, result1   = aAPI.get_deposit_addr ('BTC')
+status2a, result2a = aAPI.withdraw ('BTC', qty = 10, addr = <my address>)
+status2b, result2b = aAPI.withdraw ('BTC', qty = 10, addr = <my address>, pid = <payment id>)
+status3, result3   = aAPI.get_order (uuid = <uuid>) # <uuid> is uuid of queried order
+status4, result4   = aAPI.get_withdrawal_history ('BTC')
+status5, result5   = aAPI.get_deposit_history ('BTC')
 ~~~
+
 ##License
 The code is open-source under the terms of [MIT license](https://opensource.org/licenses/MIT).
